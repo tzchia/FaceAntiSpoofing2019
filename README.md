@@ -14,5 +14,6 @@ python inference.py --model trained.h5 --le le.pickle --detector src/face_detect
 ## References:
 1. image processing library [`imutils`](https://pypi.org/user/jrosebr1/)
 2. face detector [`CAFFE-DNN`](https://github.com/gopinath-balu/computer_vision/tree/master/CAFFE_DNN)
-3. [`VGG`](https://github.com/machrisaa/tensorflow-vgg)
-4. [`ResNet`](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-build-a-resnet-from-scratch-with-tensorflow-2-and-keras.md)
+3. anti-spoofing model arhitecture:
+- [`VGG`](https://github.com/machrisaa/tensorflow-vgg)
+- [`ResNet`](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-build-a-resnet-from-scratch-with-tensorflow-2-and-keras.md)
