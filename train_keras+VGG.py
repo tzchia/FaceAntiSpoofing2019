@@ -49,7 +49,7 @@ start_time = time.time()
 # epochs to train for
 INIT_LR = 1e-4
 BS = args["batch"]
-EPOCHS = args["epochs"] #ori=50
+EPOCHS = args["epochs"]
 side = args["side"]  #ori=32
 
 #clip_limit = 2.0
