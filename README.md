@@ -6,8 +6,10 @@
 python picFromVideo.py --input Video.mp4 --output faceDataDir --detector src/face_detector --prefix 20190520_
 
 ## Training
-python train_keras.py --dataset faceDataDir --model models --le le.pickle --modelComplexity 43 --prep clahe --epoch 100 --side 32 --batch 256
-
+### version 1.0. keras + VGG
+python train_keras+VGG.py --dataset faceDataDir --model models --le le.pickle --modelComplexity 43 --prep clahe --epoch 100 --side 32 --batch 256
+### version 2.0. tensorflow 2.0 + ResNet
+python train_tf2+ResNet.py --task 20200520 --root faceDataDir --net ResNet12
 ## Inferece
 python inference.py --model trained.h5 --le le.pickle --detector src/face_detector --side 32 --prep clahe
 
